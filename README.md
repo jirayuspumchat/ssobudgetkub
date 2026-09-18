@@ -1,6 +1,9 @@
 <div align="center">
 
-<img src="web/logo-light.png" alt="เข้าใจงบ ประกันสังคม" width="120">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="web/logo-dark.png">
+  <img src="web/logo-light.png" alt="เข้าใจงบ ประกันสังคม" width="120">
+</picture>
 
 # เข้าใจงบ ประกันสังคม
 
