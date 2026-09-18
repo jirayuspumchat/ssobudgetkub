@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="th" data-palette="#005C9E,#eb6834,#1baf7a,#C98500,#e87ba4,#4a3aa7">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เข้าใจงบ ประกันสังคม</title>
+<meta name="description" content="งบบริหารงานสำนักงานประกันสังคม ปี 2563–2567 อ่านจากเอกสารราชการต้นฉบับ พร้อมวิธีอ่านตัวเลขไม่ให้พลาด">
+<link rel="canonical" href="https://ssobudgetkub.vercel.app/">
+<meta property="og:url" content="https://ssobudgetkub.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="เข้าใจงบ ประกันสังคม — 0.2% ของเงินกองทุน">
+<meta property="og:description" content="งบบริหารงาน สปส. ปี 2567 คิดเป็นประมาณ 0.2% ของเงินลงทุนกองทุน ณ สิ้นปี 2567 — ขยาย 501 เท่าจึงเห็นชัด อ่านโครงสร้างงบพร้อมที่มา">
+<meta property="og:image" content="https://ssobudgetkub.vercel.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="งบบริหารงานปี 2567 ประมาณ 0.2% ของเงินลงทุนกองทุน ขยาย 501 เท่า">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="logo-light.png">
+<link rel="icon" type="image/png" href="logo-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="logo-light.png">
+<style>
+/* ============================================================ fonts (local)
+   IBM Plex Sans Thai ใช้ตัวเดียวทั้งหน้า ลำดับความสำคัญมาจากน้ำหนักกับขนาด
+   400 เนื้อความ · 500 ป้ายกำกับและปุ่ม · 600 หัวข้อย่อยกับตัวเลขเด่น · 700 หัวข้อหลัก
+   แยกไฟล์ไทยกับละตินตาม unicode-range เบราว์เซอร์จะโหลดเฉพาะชุดที่หน้าใช้จริง */
+@font-face {
+  font-family: "IBM Plex Sans Thai"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("fonts/ibmplexsansthai-400-thai.woff2") format("woff2");
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+@font-face {
+  font-family: "IBM Plex Sans Thai"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("fonts/ibmplexsansthai-400-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans Thai"; font-style: normal; font-weight: 500; font-display: swap;
+  src: url("fonts/ibmplexsansthai-500-thai.woff2") format("woff2");
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+@font-face {
+  font-family: "IBM Plex Sans Thai"; font-style: normal; font-weight: 500; font-display: swap;
+  src: url("fonts/ibmplexsansthai-500-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans Thai"; font-style: normal; font-weight: 600; font-display: swap;
+  src: url("fonts/ibmplexsansthai-600-thai.woff2") format("woff2");
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+@font-face {
+  font-family: "IBM Plex Sans Thai"; font-style: normal; font-weight: 600; font-display: swap;
+  src: url("fonts/ibmplexsansthai-600-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans Thai"; font-style: normal; font-weight: 700; font-display: swap;
+  src: url("fonts/ibmplexsansthai-700-thai.woff2") format("woff2");
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+@font-face {
+  font-family: "IBM Plex Sans Thai"; font-style: normal; font-weight: 700; font-display: swap;
+  src: url("fonts/ibmplexsansthai-700-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* ============================================================ tokens */
+:root {
+  color-scheme: light;
+
+  /* ฟอนต์ตัวเดียวทั้งหน้า ประกาศไว้ที่เดียวจะได้ไม่หลุดเวลาแก้ */
+  --f-sans: "IBM Plex Sans Thai", "Leelawadee UI", "Noto Sans Thai", system-ui, sans-serif;
+
+  /* พื้นและหมึก — เทาเอียงน้ำเงินตาม CI ไม่ใช่เทากลาง */
+  --ground:        #f6f8fa;
+  --surface:       #ffffff;
+  --surface-2:     #eef2f6;
+  --surface-3:     #e2e9f0;
+  --line:          #d4dde6;
+  --line-soft:     #e6ecf2;
+  --ink:           #111a22;
+  --ink-2:         #46586a;
+  --ink-3:         #6b7d8e;
+
+  /* CI สำนักงานประกันสังคม */
+  --brand:         #005c9e;
+  --brand-deep:    #003f6e;
+  --brand-soft:    #e3eef7;
+  --gold:          #ffc324;
+  --gold-deep:     #8a6400;
+  --gold-soft:     #fff5d8;
+
+  /* ชุดสีกราฟ ผ่านการตรวจ validate_palette.js ทั้งสองโหมด */
+  --s1: #005c9e;
+  --s2: #eb6834;
+  --s3: #1baf7a;
+  --s4: #c98500;
+  --s5: #e87ba4;
+  --s6: #4a3aa7;
+  --track:         #dde5ed;   /* รางของแท่งจัดสรร */
+  --grid:          #e6ecf2;
+
+  --shadow-card:   0 1px 2px rgba(17,26,34,.05), 0 8px 24px -12px rgba(17,26,34,.16);
+
+  --step--1: .8125rem;
+  --step-0:  1rem;
+  --step-1:  1.1875rem;
+  --step-2:  1.5rem;
+  --step-3:  2rem;
+  --step-4:  2.75rem;
+  --step-5:  3.75rem;
+
+  --measure: 68ch;
+  --wide:    1120px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --ground:     #0f151b;
+    --surface:    #161e26;
+    --surface-2:  #1d2732;
+    --surface-3:  #26323f;
+    --line:       #2d3a48;
+    --line-soft:  #222d38;
+    --ink:        #eef3f8;
+    --ink-2:      #a8bac9;
+    --ink-3:      #7e91a2;
+    --brand:      #4d9fda;
+    --brand-deep: #9ccbec;
+    --brand-soft: #14293b;
+    --gold:       #ffc324;
+    --gold-deep:  #ffd469;
+    --gold-soft:  #2b2314;
+    --s1: #2e8bd1;
+    --s2: #d95926;
+    --s3: #199e70;
+    --s4: #c98500;
+    --s5: #d55181;
+    --s6: #9085e9;
+    --track:      #26323f;
+    --grid:       #232f3b;
+    --shadow-card: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ground:     #0f151b;
+  --surface:    #161e26;
+  --surface-2:  #1d2732;
+  --surface-3:  #26323f;
+  --line:       #2d3a48;
+  --line-soft:  #222d38;
+  --ink:        #eef3f8;
+  --ink-2:      #a8bac9;
+  --ink-3:      #7e91a2;
+  --brand:      #4d9fda;
+  --brand-deep: #9ccbec;
+  --brand-soft: #14293b;
+  --gold:       #ffc324;
+  --gold-deep:  #ffd469;
+  --gold-soft:  #2b2314;
+  --s1: #2e8bd1;
+  --s2: #d95926;
+  --s3: #199e70;
+  --s4: #c98500;
+  --s5: #d55181;
+  --s6: #9085e9;
+  --track:      #26323f;
+  --grid:       #232f3b;
+  --shadow-card: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+
+/* ============================================================ base */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+}
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--f-sans);
+  font-size: var(--step-0);
+  line-height: 1.72;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, .display {
+  font-family: var(--f-sans);
+  line-height: 1.28;
+  text-wrap: balance;
+  /* ไม่บีบระยะตัวอักษรในหัวข้อ เพราะภาษาไทยมีวรรณยุกต์และสระบนล่าง
+     พอบีบแล้ววรรณยุกต์ของตัวติดกันจะเบียดกันจนอ่านยาก */
+  letter-spacing: normal;
+  margin: 0;
+}
+p { margin: 0; }
+a { color: var(--brand); text-underline-offset: 3px; }
+:focus-visible { outline: 2.5px solid var(--brand); outline-offset: 2px; border-radius: 3px; }
+button { font: inherit; color: inherit; }
+svg text { font-family: var(--f-sans); }
+
+/* ============================================================ layout */
+.wrap { width: 100%; max-width: var(--wide); margin-inline: auto; padding-inline: 20px; }
+.col  { width: 100%; max-width: var(--measure); margin-inline: auto; }
+.stack { display: flex; flex-direction: column; }
+.stack > * + * { margin-block-start: var(--gap, 1.1rem); }
+
+section.chapter { padding-block: clamp(3.5rem, 8vw, 6rem); border-top: 1px solid var(--line-soft); }
+section.chapter:first-of-type { border-top: 0; }
+/* กันไม่ให้หัวข้อมุดใต้แถบบนที่ติดหนึบ เวลากดลิงก์ในสารบัญ */
+section.chapter, .foot { scroll-margin-top: 112px; }
+
+h2.chapter-title { font-size: clamp(1.7rem, 4.4vw, var(--step-3)); font-weight: 700; }
+h2.chapter-title .accent { color: var(--brand); }
+.lede { font-size: var(--step-1); color: var(--ink-2); margin-block-start: .85rem; }
+
+.figure { margin-block-start: 2rem; }
+.figure--wide { max-width: var(--wide); }
+.fig-title { font-size: var(--step--1); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-3); }
+.fig-note { font-size: var(--step--1); color: var(--ink-3); margin-block-start: .7rem; }
+
+/* ============================================================ header */
+.topbar {
+  position: sticky; top: 0; z-index: 50;
+  background: color-mix(in srgb, var(--ground) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line-soft);
+}
+.topbar-in { display: flex; align-items: center; gap: 1.1rem; min-block-size: 96px; padding-block: 8px; }
+.brandmark { display: flex; align-items: center; flex: none; }
+.brand-logo { inline-size: auto; block-size: 80px; object-fit: contain; border-radius: 10px; flex: none; display: block; }
+.brandmark .logo-dark { display: none; }
+:root[data-theme="dark"] .brandmark .logo-light { display: none; }
+:root[data-theme="dark"] .brandmark .logo-dark { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .brandmark .logo-light { display: none; }
+  :root:not([data-theme="light"]) .brandmark .logo-dark { display: block; }
+}
+@media (max-width: 720px) {
+  .topbar-in { min-block-size: 78px; gap: .8rem; }
+  .brand-logo { block-size: 62px; }
+}
+.icon-btn {
+  flex: none; inline-size: 40px; block-size: 40px; display: grid; place-items: center;
+  border: 1px solid var(--line); border-radius: 10px; background: var(--surface); cursor: pointer;
+}
+.icon-btn:hover { background: var(--surface-2); }
+
+/* แถบความคืบหน้าการอ่านกลาง Header (บาร์ล้วน ไม่มีตัวอักษร) */
+.progress-tab {
+  flex: 1 1 auto; max-inline-size: 340px; margin-inline: auto;
+  display: flex; align-items: center;
+  border: 1px solid var(--line); border-radius: 999px; background: var(--surface);
+  padding: .55rem 1rem;
+}
+.progress-track { inline-size: 100%; block-size: 8px; border-radius: 999px; background: var(--track); overflow: hidden; }
+.progress-fill { display: block; block-size: 100%; inline-size: 0%; border-radius: inherit; background: var(--brand); }
+
+/* ============================================================ hero */
+.hero { padding-block: clamp(2.5rem, 6vw, 4.5rem) clamp(3rem, 7vw, 5rem); }
+.hero h1 { font-size: clamp(2.1rem, 6.6vw, var(--step-5)); font-weight: 700; }
+.hero h1 .nowrap { white-space: nowrap; }
+.hero h1 .accent { color: var(--brand); }
+.hero-sub { font-size: clamp(1.02rem, 2.4vw, 1.28rem); color: var(--ink-2); margin-block-start: 1.1rem; max-width: 56ch; }
+
+.hero-overview { max-width: 1000px; margin-inline: auto; }
+.scale-fig {
+  margin-block-start: 2.6rem; display: grid; grid-template-columns: .85fr 1.5fr;
+  border: 1px solid var(--line); border-radius: 24px; overflow: hidden;
+  background: var(--surface); box-shadow: var(--shadow-card);
+}
+.scale-summary {
+  background: var(--brand-soft); padding: clamp(24px, 3.4vw, 40px);
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+}
+.scale-kicker { color: var(--brand-deep); font-size: .82rem; font-weight: 600; }
+.scale-percent {
+  font-family: var(--f-sans); font-size: clamp(4rem, 7vw, 6rem);
+  /* ตัวเลขใหญ่มาก น้ำหนัก 600 ของ Plex ทึบพอแล้ว 700 จะตันเกินไป
+     บีบระยะได้เล็กน้อยเพราะเป็นตัวเลขล้วน ไม่มีวรรณยุกต์มาเบียด */
+  color: var(--brand-deep); font-weight: 600; line-height: 1.15; letter-spacing: -.03em;
+  margin-block: 14px 10px; font-variant-numeric: tabular-nums;
+}
+.scale-percent span { font-size: .43em; margin-inline-start: .12em; letter-spacing: -.02em; }
+.scale-caption { color: var(--ink-2); font-size: .95rem; max-width: 28ch; }
+.scale-ratio { color: var(--brand-deep); font-size: .78rem; margin-block-start: 20px; border-top: 1px solid var(--line); padding-block-start: 12px; width: 100%; }
+.scale-comparison { padding: clamp(24px, 3.4vw, 40px); display: flex; flex-direction: column; justify-content: center; min-width: 0; }
+.scale-label { display: block; font-size: .9rem; font-weight: 600; color: var(--ink-2); }
+.scale-amount { display: flex; flex-wrap: wrap; align-items: baseline; gap: 5px 10px; font-family: var(--f-sans); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 700; line-height: 1.3; margin-block: 8px 4px; font-variant-numeric: tabular-nums; }
+.scale-amount span { font-family: var(--f-sans); font-size: .8rem; font-weight: 400; color: var(--ink-2); }
+.scale-date { display: block; color: var(--ink-3); font-size: .78rem; }
+.scale-track { height: 12px; background: var(--track); border-radius: 3px; overflow: hidden; margin-block-start: 22px; }
+.scale-mark { display: block; height: 100%; background: var(--gold); }
+.scale-track-note { margin-block-start: 8px; font-size: .75rem; color: var(--ink-2); }
+.scale-admin { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 20px; margin-block-start: 24px; padding-block-start: 20px; border-top: 1px solid var(--line-soft); }
+.scale-admin .scale-amount { color: var(--brand); font-size: 1.8rem; margin: 0; }
+.scale-admin .scale-label::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); margin-inline-end: 8px; }
+.tiers-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 4px 16px; margin-block: 30px 14px; }
+.tiers-heading h2 { font-size: 1.05rem; }
+.tiers-heading p { font-size: .8rem; color: var(--ink-3); }
+.tiers { display: grid; gap: 16px; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; }
+.tier { margin: 0; min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; transition: border-color .15s, box-shadow .15s; }
+.tier:hover { border-color: var(--brand); box-shadow: var(--shadow-card); }
+.tier.is-focus { border-color: var(--brand); background: linear-gradient(145deg, var(--brand-soft), var(--surface) 75%); }
+.tier-summary { list-style: none; cursor: pointer; padding: 22px; display: flex; flex-direction: column; }
+.tier-summary::-webkit-details-marker { display: none; }
+.tier-summary:focus-visible { outline-offset: 4px; border-radius: 16px; }
+.tier-topline { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-block-end: 24px; }
+.tier-number { font-family: var(--f-sans); color: var(--ink-3); font-size: .8rem; }
+.tier-tag { color: var(--ink-2); font-size: .7rem; padding: 3px 8px; border-radius: 5px; background: var(--surface-2); }
+.is-focus .tier-tag { color: var(--brand-deep); background: var(--brand-soft); }
+.tier-label { font-size: .86rem; font-weight: 500; color: var(--ink-2); }
+.tier-val { font-family: var(--f-sans); font-size: clamp(1.55rem, 2.5vw, 2rem); font-weight: 700; line-height: 1.3; margin-block: 10px 4px; font-variant-numeric: tabular-nums; }
+.is-focus .tier-val { color: var(--brand); }
+.tier-unit { font-size: .75rem; color: var(--ink-3); min-height: 2.6em; }
+.tier-action { display: flex; align-items: center; justify-content: space-between; gap: 8px; border-top: 1px solid var(--line-soft); padding-block-start: 14px; margin-block-start: 18px; color: var(--brand); font-size: .78rem; }
+.tier-chev { width: 24px; height: 24px; display: grid; place-items: center; border-radius: 50%; background: var(--surface-2); font-size: 1.1rem; line-height: 1; }
+.tier-body { font-size: .85rem; color: var(--ink-2); line-height: 1.8; padding: 0 22px 22px; overflow-wrap: anywhere; }
+.tier-body .src { white-space: normal; line-height: 1.5; }
+@media (max-width: 720px) {
+  .scale-fig { grid-template-columns: 1fr; border-radius: 20px; }
+  .scale-summary { display: grid; grid-template-columns: auto 1fr; gap: 6px 20px; align-items: center; }
+  .scale-kicker, .scale-ratio { grid-column: 1 / -1; }
+  .scale-percent { font-size: 4.25rem; margin: 0; }
+  .scale-caption { font-size: .85rem; }
+  .scale-ratio { margin-block-start: 8px; }
+  .tiers { grid-template-columns: 1fr; gap: 12px; }
+  .tier-summary { padding: 20px; display: grid; grid-template-columns: 1fr auto; column-gap: 12px; }
+  .tier-topline, .tier-action { grid-column: 1 / -1; }
+  .tier-topline { margin-block-end: 14px; }
+  .tier-label { align-self: center; }
+  .tier-val { margin: 0; font-size: 1.7rem; text-align: right; }
+  .tier-unit { grid-column: 1 / -1; text-align: right; min-height: 0; margin-block-start: 3px; }
+  .tier-action { margin-block-start: 14px; }
+}
+@media (max-width: 380px) {
+  .scale-summary { gap: 6px 12px; padding: 20px; }
+  .scale-percent { font-size: 3.6rem; }
+  .tier-summary { grid-template-columns: 1fr; }
+  .tier-val, .tier-unit { text-align: left; }
+  .tier-val { margin-block-start: 8px; }
+}
+
+/* ============================================================ source chips */
+.src {
+  display: inline-flex; align-items: center; gap: .3rem; vertical-align: .08em;
+  font-family: var(--f-sans);
+  font-size: .7rem; font-weight: 600; line-height: 1;
+  padding: .24rem .45rem; border-radius: 5px;
+  background: var(--surface-2); color: var(--ink-3);
+  border: 1px solid var(--line-soft); white-space: nowrap;
+}
+.src--ext { background: var(--gold-soft); color: var(--gold-deep); border-color: color-mix(in srgb, var(--gold) 40%, transparent); }
+.src--ext a { color: inherit; }
+
+.legend-key {
+  display: flex; flex-wrap: wrap; gap: 1rem 1.6rem; margin-block-start: 1.8rem;
+  padding: .95rem 1.1rem; border-radius: 11px;
+  background: var(--surface-2); border: 1px solid var(--line-soft);
+  font-size: var(--step--1); color: var(--ink-2);
+}
+.legend-key > div { display: flex; align-items: center; gap: .5rem; }
+
+/* ============================================================ cards / callouts */
+.card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 14px; padding: 1.25rem;
+}
+.callout {
+  position: relative;
+  background: var(--gold-soft);
+  border: 1px solid color-mix(in srgb, var(--gold) 45%, transparent);
+  border-radius: 14px;
+  padding: 1rem 1.15rem 1rem 3.1rem;
+  font-size: .95rem;
+  line-height: 1.7;
+  box-shadow: var(--shadow-card);
+}
+.callout::before {
+  content: "!";
+  position: absolute;
+  inset-inline-start: 1.05rem;
+  top: 1.05rem;
+  inline-size: 1.4rem;
+  block-size: 1.4rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--gold);
+  color: #3a2e00;
+  font-family: var(--f-sans);
+  font-weight: 700;
+  font-size: .85rem;
+  line-height: 1;
+}
+.callout strong { color: var(--ink); }
+.callout--brand { background: var(--brand-soft); border-color: color-mix(in srgb, var(--brand) 40%, transparent); }
+.callout--brand::before { background: var(--brand); color: #fff; }
+
+/* ============================================================ vocab (§1) */
+.vocab-bar { position: relative; margin-block-start: 1.4rem; }
+.vocab-bar svg { display: block; inline-size: 100%; block-size: auto; }
+.vocab-tabs { display: flex; flex-wrap: wrap; gap: .5rem; margin-block-start: 1.3rem; }
+.vtab {
+  cursor: pointer; border: 1px solid var(--line); background: var(--surface);
+  border-radius: 999px; padding: .48rem .95rem; font-size: .92rem; font-weight: 600;
+  display: flex; align-items: center; gap: .5rem; transition: .15s;
+}
+.vtab .sw { inline-size: .7rem; block-size: .7rem; border-radius: 3px; flex: none; }
+.vtab[aria-selected="true"] { border-color: var(--brand); background: var(--brand-soft); color: var(--brand-deep); }
+.vocab-def { margin-block-start: 1.1rem; min-block-size: 6.5rem; }
+.vocab-def h3 { font-size: var(--step-2); font-weight: 600; }
+.vocab-def .amount { font-family: var(--f-sans); font-size: var(--step-3); font-weight: 700; margin-block: .35rem .5rem; }
+.vocab-def p { color: var(--ink-2); }
+
+/* ============================================================ years (§2) */
+.year-chart { margin-block-start: 1.5rem; }
+.year-chart svg { display: block; inline-size: 100%; block-size: auto; }
+.reveal-row { display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; margin-block-start: 1.4rem; }
+.btn {
+  cursor: pointer; border-radius: 10px; padding: .6rem 1.1rem;
+  font-weight: 600; font-size: .94rem; border: 1px solid var(--brand);
+  background: var(--brand); color: #fff; transition: .15s;
+}
+.btn:hover { background: var(--brand-deep); border-color: var(--brand-deep); }
+.btn--ghost { background: transparent; color: var(--brand); }
+.btn--ghost:hover { background: var(--brand-soft); color: var(--brand-deep); }
+.btn[aria-pressed="true"] { background: var(--brand-deep); border-color: var(--brand-deep); color: #fff; }
+
+/* ============================================================ treemap (§3) */
+.tm-controls { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin-block-end: 1rem; }
+.yearsel { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--surface); }
+.yearsel button {
+  cursor: pointer; border: 0; background: transparent; padding: .45rem .8rem;
+  font-size: .9rem; font-weight: 600; color: var(--ink-2); border-inline-start: 1px solid var(--line);
+}
+.yearsel button:first-child { border-inline-start: 0; }
+.yearsel button[aria-pressed="true"] { background: var(--brand); color: #fff; }
+.crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem; font-size: .88rem; margin-block-end: .8rem; min-block-size: 1.9rem; }
+.crumbs button {
+  cursor: pointer; border: 0; background: var(--surface-2); border-radius: 7px;
+  padding: .3rem .6rem; font-size: .86rem; font-weight: 600; color: var(--ink-2);
+}
+.crumbs button:hover { background: var(--surface-3); color: var(--ink); }
+.crumbs .sep { color: var(--ink-3); }
+.crumbs .cur { padding: .3rem .1rem; font-weight: 700; }
+/* โฟกัสถูกย้ายมาที่นี่ด้วยโค้ดหลังเจาะชั้น :focus-visible จึงไม่ติด ต้องใช้ :focus */
+.crumbs .cur:focus { outline: 2.5px solid var(--brand); outline-offset: 2px; border-radius: 3px; }
+.tm-holder { position: relative; }
+.tm-holder svg { display: block; inline-size: 100%; block-size: auto; }
+.tm-tile { cursor: pointer; }
+.tm-tile.leaf { cursor: default; }
+
+/* ============================================================ items (§4) */
+.filters {
+  display: flex; flex-wrap: wrap; gap: .6rem; align-items: center;
+  margin-block-end: 1.1rem;
+}
+.filters input[type="search"], .filters select {
+  font: inherit; font-size: .92rem; padding: .5rem .7rem;
+  border: 1px solid var(--line); border-radius: 9px;
+  background: var(--surface); color: var(--ink); min-inline-size: 0;
+}
+.filters input[type="search"] { flex: 1 1 15rem; }
+.barlist { display: flex; flex-direction: column; gap: .55rem; }
+.barrow { display: grid; grid-template-columns: 1fr auto; gap: .2rem .9rem; align-items: baseline; }
+.barrow .nm { font-size: .93rem; line-height: 1.45; }
+.barrow .vl { font-size: .93rem; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.barrow .tr { grid-column: 1 / -1; block-size: 9px; background: var(--track); border-radius: 0 4px 4px 0; overflow: hidden; }
+.barrow .fl { block-size: 100%; border-radius: 0 4px 4px 0; }
+.barrow .mt { grid-column: 1 / -1; font-size: .78rem; color: var(--ink-3); display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; }
+/* ยอดเต็มบาท ตัวเลขยาวกว่าเดิมมาก จอแคบจึงให้ตกลงมาอยู่บรรทัดของตัวเอง */
+.barrow .vl .delta { font-weight: 600; font-size: .82rem; margin-inline-start: .4rem; }
+.barrow .vl .delta.up { color: var(--s2); }
+.barrow .vl .delta.down { color: var(--s3); }
+.barrow .vl .delta.flat { color: var(--ink-3); }
+@media (max-width: 560px) {
+  .barrow { grid-template-columns: 1fr; }
+  .barrow .vl { grid-column: 1; text-align: start; }
+}
+
+/* แถวที่กดเปิดประวัติ 5 ปีได้ */
+.barrow--openable { cursor: pointer; text-align: start; inline-size: 100%; background: transparent;
+  border: 1px solid transparent; border-radius: 10px; padding: .5rem .6rem; margin-inline: -.6rem; font: inherit; color: inherit; }
+.barrow--openable:hover { background: var(--surface-2); border-color: var(--line); }
+.barrow--openable[aria-expanded="true"] { background: var(--surface-2); border-color: var(--line); }
+.barrow .hint { font-size: .72rem; color: var(--brand); font-weight: 600; white-space: nowrap; }
+.barrow[aria-expanded="true"] .hint::before { content: "▾ "; }
+.barrow[aria-expanded="false"] .hint::before { content: "▸ "; }
+
+.item-hist { padding: .2rem .6rem 1.1rem; }
+.item-hist[hidden] { display: none; }
+.item-hist .hd { font-size: .8rem; font-weight: 700; color: var(--ink-2); margin-block-end: .6rem; }
+.item-hist svg { display: block; inline-size: 100%; block-size: auto; }
+.item-hist .note { font-size: .78rem; color: var(--ink-3); margin-block-start: .6rem; line-height: 1.6; }
+.item-hist .warn {
+  color: var(--gold-deep); background: var(--gold-soft);
+  border-inline-start: 3px solid var(--gold); border-radius: 0 8px 8px 0;
+  padding: .6rem .75rem; margin-block-start: .7rem;
+}
+.item-hist .warn strong { color: var(--gold-deep); }
+.item-hist .warn .near { display: inline-block; margin-block-start: .35rem; color: var(--ink-2); }
+.item-hist .none { font-size: .82rem; color: var(--ink-3); padding-block: .6rem; }
+.empty { padding: 2rem 0; text-align: center; color: var(--ink-3); }
+/* ปุ่มดูเพิ่มใน flex column ต้องไม่ยืดเต็มความกว้าง */
+.barlist > .btn, .sparklist > .btn { align-self: start; margin-block-start: .7rem; }
+.tm-barbtn {
+  cursor: pointer; text-align: start; inline-size: 100%;
+  background: transparent; border: 1px solid transparent;
+  border-radius: 9px; padding: .5rem .6rem; margin-inline: -.6rem;
+}
+.tm-barbtn:hover { background: var(--surface-2); border-color: var(--line); }
+.tm-barbtn .nm { font-weight: 600; }
+.tm-dashlink { font-size: .8rem; padding: .32rem .7rem; margin-block: -.15rem .55rem; }
+
+/* ---------- §4 Top 5 preview ---------- */
+.barlist--top5 { gap: .85rem; }
+.barrow--top { position: relative; }
+.barrow .rank {
+  display: inline-grid; place-items: center;
+  inline-size: 1.45rem; block-size: 1.45rem; flex: none;
+  border-radius: 50%; background: var(--surface-2);
+  border: 1px solid var(--line); color: var(--ink-2);
+  font-size: .78rem; font-weight: 700; font-variant-numeric: tabular-nums;
+}
+.barrow--top .nm { font-weight: 600; display: flex; align-items: flex-start; gap: .55rem; }
+.barrow--top:nth-child(1) .rank { background: var(--brand); border-color: var(--brand); color: #fff; }
+.barrow--top:nth-child(2) .rank,
+.barrow--top:nth-child(3) .rank { background: var(--brand-soft); border-color: var(--brand); color: var(--brand-deep); }
+
+/* ---------- §4 Modal Dashboard ---------- */
+.item-modal {
+  border: 1px solid var(--line); border-radius: 16px;
+  padding: 0; color: var(--ink); background: var(--ground);
+  width: min(980px, 94vw); max-height: 90dvh;
+}
+.item-modal::backdrop { background: rgba(10, 20, 30, .55); backdrop-filter: blur(2px); }
+.item-modal-head {
+  position: sticky; top: 0; z-index: 2;
+  display: flex; align-items: flex-start; gap: 1rem;
+  padding: 1.1rem 1.25rem; background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+.item-modal-head h3 { font-size: 1.25rem; margin-block: .15rem .3rem; }
+.item-modal-head .fig-note { margin: 0; }
+.item-modal-head .icon-btn { margin-inline-start: auto; flex: none; }
+.item-modal-scroll { overflow-y: auto; max-height: calc(90dvh - 92px); padding: 1.1rem 1.25rem 1.4rem; }
+.item-kpis { display: grid; gap: .7rem; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); margin-block-end: 1rem; }
+.item-kpis .stat { padding: .85rem .95rem; }
+.item-kpis .stat .vl { font-size: 1.35rem; }
+.item-catbars { display: flex; flex-direction: column; gap: .6rem; margin-block-end: 1rem; }
+.item-catstack { display: flex; inline-size: 100%; block-size: 14px; background: var(--track); border-radius: 7px; overflow: hidden; }
+.item-catstack .seg { block-size: 100%; min-width: 0; flex: none; }
+.item-catstack .seg:first-child { border-start-start-radius: 7px; border-end-start-radius: 7px; }
+.item-catstack .seg:last-child { border-start-end-radius: 7px; border-end-end-radius: 7px; }
+.cat-leglist { display: flex; flex-direction: row; flex-wrap: wrap; gap: .6rem 1.1rem; }
+.cat-leg { flex: 1 1 8rem; min-inline-size: 0; display: flex; flex-direction: column; gap: .12rem; font-size: .9rem; }
+.cat-leg .nm { display: inline-flex; align-items: center; gap: .45rem; font-weight: 600; font-size: .86rem; }
+.cat-leg .dot { inline-size: .62rem; block-size: .62rem; border-radius: 3px; flex: none; }
+.cat-leg .vl { font-size: .98rem; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.cat-leg .pc { font-size: .78rem; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+/* ---------- §4 chip ตัวกรองที่ส่งมาจาก Section 3 ---------- */
+.item-ctx { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin-block-end: .8rem; padding: .6rem .8rem; border-radius: 10px; background: var(--brand-soft); border: 1px solid var(--brand); font-size: .86rem; }
+.item-ctx[hidden] { display: none; }
+.ctx-clear { cursor: pointer; border: 1px solid var(--brand); background: transparent; color: var(--brand-deep); border-radius: 7px; padding: .2rem .6rem; font-size: .8rem; font-weight: 700; }
+.ctx-clear:hover { background: var(--surface); }
+/* เนื้อหาใน dialog ถูกวาดใหม่ตลอด ไม่ใช้ animation เลื่อนเข้าตาม scroll */
+#itemModal .motion-item, #seriesModal .motion-item { opacity: 1 !important; transform: none !important; transition: none !important; }
+#itemModal .motion-item.is-visible .fl { animation: none !important; }
+@media (max-width: 640px) {
+  .item-modal { width: 96vw; max-height: 94dvh; border-radius: 13px; }
+  .item-modal-scroll { padding: .95rem .95rem 1.2rem; max-height: calc(94dvh - 92px); }
+}
+
+/* guess game */
+.guess { margin-block-start: 2rem; }
+.guess-card { display: flex; flex-direction: column; gap: 1rem; }
+.guess-q { font-size: var(--step-1); font-weight: 600; }
+.guess-slider { inline-size: 100%; accent-color: var(--brand); block-size: 2rem; }
+.guess-scale { display: flex; justify-content: space-between; font-size: .78rem; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.guess-your { font-family: var(--f-sans); font-size: var(--step-2); font-weight: 700; }
+.guess-result { border-radius: 11px; padding: 1rem 1.15rem; font-size: .95rem; }
+.guess-result[hidden] { display: none; }
+.guess-result.hot { background: var(--brand-soft); border: 1px solid var(--brand); }
+.guess-result.cold { background: var(--surface-2); border: 1px solid var(--line); }
+.guess-actual { font-family: var(--f-sans); font-size: var(--step-2); font-weight: 700; display: block; margin-block: .2rem .45rem; }
+.guess-nav { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; }
+.guess-dots { display: flex; gap: .35rem; margin-inline-start: auto; }
+.guess-dots span { inline-size: .5rem; block-size: .5rem; border-radius: 50%; background: var(--surface-3); }
+.guess-dots span.on { background: var(--brand); }
+
+/* ============================================================ series (§5) */
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--surface); }
+.seg button { cursor: pointer; border: 0; background: transparent; padding: .5rem .9rem; font-size: .9rem; font-weight: 600; color: var(--ink-2); border-inline-start: 1px solid var(--line); }
+.seg button:first-child { border-inline-start: 0; }
+.seg button[aria-pressed="true"] { background: var(--brand); color: #fff; }
+.sparklist { display: flex; flex-direction: column; gap: .4rem; margin-block-start: 1.1rem; }
+/* แถบใบ้ว่ากดที่รายการเพื่อดูรายละเอียดได้ */
+.tap-hint {
+  display: flex; align-items: center; gap: .5rem;
+  margin-block: 1rem 0; padding: .6rem .85rem; border-radius: 10px;
+  background: var(--brand-soft); border: 1px solid color-mix(in srgb, var(--brand) 40%, transparent);
+  color: var(--brand-deep); font-size: .88rem; font-weight: 600;
+}
+.sparkrow {
+  display: grid; grid-template-columns: 1fr 108px 128px 1.2rem; gap: .9rem; align-items: center;
+  padding: .55rem .7rem; border-radius: 9px; border: 1px solid transparent; cursor: pointer;
+  text-align: start; background: transparent; inline-size: 100%;
+}
+.sparkrow:hover { background: var(--surface-2); }
+.sparkrow[aria-expanded="true"] { background: var(--surface-2); border-color: var(--line); }
+/* ลูกศรบอกว่ากดกางดูรายละเอียดได้ หมุนลงเมื่อกางอยู่ */
+.sparkrow::after {
+  content: "›"; justify-self: center;
+  font-size: 1.35rem; font-weight: 700; line-height: 1; color: var(--ink-3);
+  transition: transform .2s, color .2s;
+}
+.sparkrow:hover::after { color: var(--brand); }
+.sparkrow[aria-expanded="true"]::after { transform: rotate(90deg); color: var(--brand); }
+.sparkrow .nm { font-size: .9rem; line-height: 1.45; }
+.sparkrow .sp { block-size: 30px; }
+.sparkrow .sp svg { display: block; inline-size: 100%; block-size: 30px; }
+.sparkrow .tot { font-size: .88rem; font-weight: 700; text-align: end; font-variant-numeric: tabular-nums; }
+.spark-detail { padding: .3rem .7rem 1rem; display: flex; flex-direction: column; gap: .7rem; }
+.spark-detail[hidden] { display: none; }
+/* ---------- §5 กราฟแนวโน้ม 5 ปีในรายละเอียด ---------- */
+.trend-head { font-size: .95rem; }
+.trend-head strong.up { color: var(--s3); }
+.trend-head strong.down { color: var(--s2); }
+.trend-chart svg { display: block; inline-size: 100%; block-size: auto; background: var(--surface); border: 1px solid var(--line-soft); border-radius: 11px; padding: .4rem .3rem .1rem; }
+.trend-yoy { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: space-between; }
+.yoy { flex: 1 1 auto; text-align: center; font-size: .78rem; font-variant-numeric: tabular-nums; padding: .18rem .6rem; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line-soft); color: var(--ink-2); }
+.yoy.up { color: var(--s3); border-color: var(--s3); }
+.yoy.down { color: var(--s2); border-color: var(--s2); }
+@media (max-width: 640px) {
+  .sparkrow { grid-template-columns: 1fr 96px 1.2rem; }
+  .sparkrow .tot { grid-column: 2; text-align: start; font-size: .82rem; }
+  .sparkrow::after { grid-column: 3; grid-row: 1; }
+}
+
+/* ============================================================ assets (§6) */
+.asset-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: 13px; padding: 1.1rem 1.15rem; }
+.stat .lb { font-size: var(--step--1); color: var(--ink-2); font-weight: 600; }
+.stat .vl { font-family: var(--f-sans); font-size: 1.85rem; font-weight: 700; line-height: 1.15; margin-block-start: .3rem; }
+.stat .sub { font-size: .8rem; color: var(--ink-3); margin-block-start: .25rem; }
+.dep-list { display: flex; flex-direction: column; gap: .75rem; margin-block-start: 1.4rem; }
+.deprow { display: grid; grid-template-columns: 1fr auto; gap: .25rem .8rem; }
+.deprow .nm { font-size: .92rem; font-weight: 500; }
+.deprow .vl { font-size: .86rem; color: var(--ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.deprow .tr { grid-column: 1 / -1; block-size: 15px; display: flex; gap: 2px; background: var(--track); border-radius: 0 4px 4px 0; }
+.deprow .acq { background: var(--track); border-radius: 0 4px 4px 0; position: relative; }
+.deprow .bk  { border-radius: 0 4px 4px 0; }
+
+/* ============================================================ quiz (§7) */
+.quiz { display: grid; gap: .9rem; }
+.qcard { background: var(--surface); border: 1px solid var(--line); border-radius: 13px; padding: 1.15rem 1.25rem; }
+.qclaim { font-size: 1.02rem; font-weight: 600; line-height: 1.6; }
+.qclaim::before { content: "“"; } .qclaim::after { content: "”"; }
+.qbtns { display: flex; gap: .55rem; margin-block-start: .9rem; flex-wrap: wrap; }
+.qbtn {
+  cursor: pointer; border: 1px solid var(--line); background: var(--surface-2);
+  border-radius: 9px; padding: .45rem 1.1rem; font-size: .92rem; font-weight: 600;
+}
+.qbtn:hover { border-color: var(--brand); }
+.qbtn.picked-right { background: var(--s3); border-color: var(--s3); color: #fff; }
+.qbtn.picked-wrong { background: var(--s2); border-color: var(--s2); color: #fff; }
+.qbtn.is-answer { border-color: var(--s3); box-shadow: inset 0 0 0 1px var(--s3); }
+.qbtn[disabled] { cursor: default; }
+.qans { margin-block-start: .9rem; padding-block-start: .9rem; border-top: 1px solid var(--line-soft); font-size: .93rem; color: var(--ink-2); }
+.qans[hidden] { display: none; }
+.qverdict { font-weight: 700; color: var(--ink); }
+.qscore { font-size: .95rem; font-weight: 600; color: var(--ink-2); margin-block-start: 1.1rem; }
+
+/* ============================================================ downloads (§8) */
+.dl-intro { font-size: .93rem; color: var(--ink-2); margin-block-start: .7rem; max-width: 62ch; }
+.dl-grid {
+  display: grid; gap: .8rem; margin-block-start: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.dl-card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  padding: .95rem 1rem; display: flex; flex-direction: column; gap: .15rem;
+}
+.dl-card .nm { font-weight: 600; font-size: .95rem; }
+.dl-card .ds { font-size: .82rem; color: var(--ink-3); line-height: 1.55; }
+.dl-card .rc { font-size: .78rem; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.dl-btns { display: flex; gap: .45rem; margin-block-start: .7rem; }
+.dl-btn {
+  cursor: pointer; flex: 1; text-align: center;
+  border: 1px solid var(--line); background: var(--surface-2); color: var(--ink);
+  border-radius: 8px; padding: .38rem .6rem; font-size: .84rem; font-weight: 700;
+  letter-spacing: .02em; transition: .15s;
+}
+.dl-btn:hover { border-color: var(--brand); background: var(--brand-soft); color: var(--brand-deep); }
+.dl-btn.done { border-color: var(--s3); background: var(--s3); color: #fff; }
+.dl-all { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem; margin-block-start: 1.2rem; }
+.dl-all .fig-note { margin-block-start: 0; }
+.dl-rules { margin: .7rem 0 0; padding-inline-start: 1.2rem; display: flex; flex-direction: column; gap: .45rem; }
+.dl-rules li { font-size: .9rem; line-height: 1.6; }
+.dl-rules code {
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: .85em;
+  background: var(--surface-2); border: 1px solid var(--line-soft);
+  border-radius: 4px; padding: .05rem .3rem;
+}
+
+/* ============================================================ tables */
+details.tableview { margin-block-start: 1.1rem; }
+details.tableview > summary {
+  cursor: pointer; font-size: var(--step--1); font-weight: 600; color: var(--ink-2);
+  padding: .45rem 0; list-style: none; display: flex; align-items: center; gap: .45rem;
+}
+details.tableview > summary::-webkit-details-marker { display: none; }
+details.tableview > summary::before { content: "▸"; font-size: .7rem; transition: transform .15s; }
+details.tableview[open] > summary::before { transform: rotate(90deg); }
+.tablescroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 11px; }
+table { border-collapse: collapse; inline-size: 100%; font-size: .86rem; }
+th, td { padding: .5rem .75rem; text-align: start; border-block-end: 1px solid var(--line-soft); white-space: nowrap; }
+th { background: var(--surface-2); font-weight: 700; color: var(--ink-2); position: sticky; top: 0; }
+td.n, th.n { text-align: end; font-variant-numeric: tabular-nums; }
+tbody tr:last-child td { border-block-end: 0; }
+td.wrap-cell { white-space: normal; min-inline-size: 18rem; }
+
+/* ============================================================ tooltip */
+.tip {
+  position: fixed; z-index: 90; pointer-events: none; opacity: 0;
+  background: var(--ink); color: var(--ground);
+  border-radius: 8px; padding: .5rem .7rem; font-size: .82rem; line-height: 1.5;
+  max-inline-size: 17rem; box-shadow: 0 6px 20px -6px rgba(0,0,0,.4);
+  transition: opacity .1s;
+}
+.tip.on { opacity: 1; }
+/* พื้นของ tooltip คือ var(--ink) ตัวหนาจึงต้องใช้สีฝั่งตรงข้ามของธีมเสมอ
+   กฎโหมดมืดต้องอยู่ใน media query ด้วย ไม่งั้น :not([data-theme="light"])
+   จะเป็นจริงตอนที่ยังไม่มี attribute เลย ซึ่งคือผู้เข้าชมครั้งแรกทุกคน
+   แล้วตัวหนาจะได้สีเดียวกับพื้นพอดีจนมองไม่เห็น */
+.tip b { color: #fff; }
+:root[data-theme="dark"] .tip b { color: var(--ink); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .tip b { color: var(--ink); }
+}
+
+/* ============================================================ §8 ที่มา */
+.foot { background: var(--surface-2); border-top: 1px solid var(--line); padding-block: 3rem 3.5rem; }
+.srclist { display: flex; flex-direction: column; gap: .7rem; margin-block-start: 1.2rem; }
+.srcitem { display: grid; grid-template-columns: auto 1fr; gap: .2rem .8rem; padding-block-end: .7rem; border-block-end: 1px solid var(--line-soft); }
+.srcitem .id { font-size: .72rem; font-weight: 700; color: var(--ink-3); padding-block-start: .18rem; }
+.srcitem .fn { font-size: .9rem; font-weight: 600; word-break: break-word; }
+.srcitem .mt { grid-column: 2; font-size: .8rem; color: var(--ink-3); }
+.disclaim { font-size: .84rem; color: var(--ink-3); margin-block-start: 2rem; line-height: 1.7; }
+
+/* ============================================================ แถบปิดท้ายเว็บ */
+/* พื้นเป็นสีทึบสีเดียวตายตัวทั้งโหมดสว่างและมืด เพราะโลโก้ทั้งสองไฟล์เป็นสีขาวโปร่ง
+   ถ้าผูกกับตัวแปรธีม พอสลับเป็นโหมดสว่างโลโก้จะหายไปกับพื้น */
+.sitefoot {
+  --sf-ink:    #ffffff;
+  --sf-ink-2:  rgba(255,255,255,.76);
+  --sf-ink-3:  rgba(255,255,255,.55);
+  --sf-line:   rgba(255,255,255,.2);
+  --sf-accent: #ffc324;                 /* ทอง CI ประกันสังคม คู่สีนี้ผ่าน 6.7:1 */
+  background: #003f6e;
+  color: var(--sf-ink);
+  padding-block: 3.2rem 2.8rem;
+}
+.sitefoot-in { display: flex; flex-direction: column; gap: 2.2rem; }
+.sitefoot a { color: var(--sf-accent); text-decoration-thickness: 1px; }
+.sitefoot a:hover { color: #fff; }
+.sitefoot :focus-visible { outline-color: var(--sf-accent); }
+.sf-sr { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+.sf-top { display: grid; grid-template-columns: auto 1fr; gap: 1.5rem 3rem; align-items: start; }
+.sf-marks { display: flex; align-items: center; gap: 1.1rem; flex: none; }
+.sf-logo { inline-size: auto; block-size: 66px; object-fit: contain; display: block; }
+.sf-ft   { inline-size: auto; block-size: 66px; object-fit: contain; display: block; }
+.sf-rule { inline-size: 1px; block-size: 44px; background: var(--sf-line); flex: none; }
+
+.sf-about { display: flex; flex-direction: column; gap: .9rem; max-inline-size: 62ch; }
+.sf-lead { font-size: .95rem; line-height: 1.78; }
+.sf-note { font-size: .84rem; line-height: 1.78; color: var(--sf-ink-2); }
+
+.sf-tail {
+  display: flex; flex-direction: column; align-items: center; gap: 1rem;
+  text-align: center; border-block-start: 1px solid var(--sf-line); padding-block-start: 1.8rem;
+}
+.sf-copy { font-size: .86rem; color: var(--sf-ink-2); }
+.sf-prev { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .55rem .8rem; font-size: .86rem; }
+.sf-prev-label { color: var(--sf-ink-3); }
+.sf-prev a {
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding: .32rem .85rem; border: 1px solid var(--sf-line); border-radius: 999px;
+  color: #fff; text-decoration: none; font-weight: 600; transition: background .15s, border-color .15s;
+}
+.sf-prev a:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.45); }
+.sf-out { opacity: .7; flex: none; }
+
+@media (max-width: 760px) {
+  .sf-top { grid-template-columns: 1fr; gap: 1.5rem; }
+  .sf-logo { block-size: 56px; }
+  .sf-ft   { block-size: 56px; }
+}
+/* จอแคบ: ดันป้าย "ผลงานก่อนหน้า" ขึ้นบรรทัดของตัวเอง ไม่ให้ปุ่มสองอันแยกคนละแถว */
+@media (max-width: 560px) {
+  .sf-prev-label { flex-basis: 100%; }
+}
+
+.skip { position: absolute; inset-inline-start: -9999px; }
+.skip:focus { position: static; display: inline-block; padding: .5rem 1rem; background: var(--brand); color: #fff; }
+
+/* Reading, sharing and navigation */
+.copy-anchor { display:inline-grid; place-items:center; min-width:44px; min-height:44px; margin-inline-start:.3rem; border:0; border-radius:8px; background:transparent; color:var(--brand); font:inherit; font-size:1.1rem; cursor:pointer; vertical-align:middle; }
+.copy-anchor:hover { background:var(--brand-soft); }
+.copy-status { position:fixed; bottom:1rem; left:50%; transform:translateX(-50%); z-index:100; padding:.7rem 1rem; border-radius:10px; background:var(--ink); color:var(--surface); max-width:90vw; }
+.copy-status:empty { display:none; }
+.year-hit:hover, .year-hit:focus-visible { stroke:var(--brand); stroke-width:1.5; stroke-opacity:.65; outline:none; }
+.table-frame { position:relative; }
+.table-frame::after { content:""; position:absolute; right:0; top:0; bottom:0; width:28px; pointer-events:none; border-radius:0 11px 11px 0; background:linear-gradient(90deg,transparent,var(--surface-3)); opacity:0; }
+.table-frame.has-more::after { opacity:1; }
+.tablescroll { max-block-size:32rem; max-block-size:min(65vh,32rem); overflow:auto; }
+th { z-index:1; }
+
+/* Scroll motion: JS adds .motion-ready only after observers are active, so
+   content stays visible when scripts fail or IntersectionObserver is absent. */
+.motion-ready .motion-item {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  transition:
+    opacity .58s cubic-bezier(.2,.7,.2,1),
+    transform .68s cubic-bezier(.2,.7,.2,1);
+  transition-delay: var(--motion-delay, 0ms);
+  will-change: opacity, transform;
+}
+.motion-ready .motion-item.motion-from-left { transform: translate3d(-24px, 0, 0); }
+.motion-ready .motion-item.motion-scale { transform: translate3d(0, 12px, 0) scale(.975); }
+.motion-ready .motion-item.is-visible { opacity: 1; transform: none; }
+.motion-ready .motion-item.is-visible .fl,
+.motion-ready .motion-item.is-visible .bk,
+.motion-ready .motion-item.is-visible .acq {
+  animation: motion-bar-grow .72s cubic-bezier(.2,.75,.25,1) both;
+  transform-origin: left center;
+  animation-delay: calc(var(--motion-delay, 0ms) + 120ms);
+}
+/* §6 ค่าเสื่อม: รางเทา (ราคาที่ซื้อมา) slide ขึ้นก่อน แล้วแถบน้ำเงิน (มูลค่าที่เหลือ) ค่อย slide ตาม */
+.motion-ready .motion-item.is-visible .deprow .tr {
+  animation: motion-bar-grow .55s cubic-bezier(.2,.75,.25,1) both;
+  transform-origin: left center;
+  animation-delay: calc(var(--motion-delay, 0ms) + 120ms);
+}
+.motion-ready .motion-item.is-visible .deprow .bk {
+  animation-delay: calc(var(--motion-delay, 0ms) + 520ms);
+}
+.motion-ready .motion-item.is-visible .deprow .acq {
+  animation: none;
+}
+.motion-ready .motion-item.is-visible .sp polyline {
+  stroke-dasharray: 180;
+  stroke-dashoffset: 180;
+  animation: motion-line-draw .9s ease-out forwards;
+  animation-delay: calc(var(--motion-delay, 0ms) + 100ms);
+}
+.motion-ready .motion-svg-in { animation: motion-svg-in .62s cubic-bezier(.2,.7,.2,1) both; }
+.tier, .stat, .qcard, .dl-card, .sparkrow, .tm-barbtn {
+  transition: border-color .2s, background-color .2s, box-shadow .25s, transform .25s cubic-bezier(.2,.7,.2,1);
+}
+@media (hover:hover) and (pointer:fine) {
+  .tier:hover, .stat:hover, .qcard:hover, .dl-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-card); }
+  .sparkrow:hover, .tm-barbtn:hover { transform: translateX(4px); }
+}
+@keyframes motion-bar-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes motion-line-draw { to { stroke-dashoffset: 0; } }
+@keyframes motion-svg-in { from { opacity:0; transform:translateY(10px) scale(.99); } to { opacity:1; transform:none; } }
+@media (max-width:640px) {
+  .motion-ready .motion-item { transform:translate3d(0,16px,0); transition-duration:.48s,.56s; }
+  .motion-ready .motion-item.motion-from-left { transform:translate3d(-14px,0,0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .motion-ready .motion-item, .motion-ready .motion-item.is-visible,
+  .motion-ready .motion-item.is-visible .fl, .motion-ready .motion-item.is-visible .bk,
+  .motion-ready .motion-item.is-visible .acq, .motion-ready .motion-item.is-visible .deprow .tr,
+  .motion-ready .motion-item.is-visible .sp polyline,
+  .motion-ready .motion-svg-in {
+    opacity:1; transform:none; animation:none !important; transition:none !important; will-change:auto;
+  }
+}
+@media print {
+  :root, :root[data-theme] { color-scheme:light; --ground:#fff; --surface:#fff; --surface-2:#f3f3f3; --surface-3:#eee; --ink:#111; --ink-2:#333; --ink-3:#444; --line:#ccc; --line-soft:#ddd; }
+  body { background:#fff !important; color:#111 !important; font-size:10pt; }
+  .topbar, .skip, .copy-anchor, .copy-status, #tip { display:none !important; }
+  .tablescroll { overflow:visible; max-block-size:none; border:0; }
+  .table-frame::after { display:none; }
+  table { width:100%; min-width:0 !important; font-size:8pt; }
+  th, td { white-space:normal !important; overflow-wrap:anywhere; }
+  th { position:static; }
+  thead { display:table-header-group; }
+  tr, .chapter-title { break-inside:avoid; }
+  .chapter-title { break-after:avoid; }
+  .chapter { padding-block:1.5rem; }
+  details > * { display:block !important; }
+  details::details-content { content-visibility:visible; }
+  svg { print-color-adjust:exact; }
+  .sitefoot { background:#fff !important; color:#111 !important; border-top:1px solid #ccc; padding-block:1.2rem; }
+  .sitefoot .sf-marks { display:none !important; }
+  .sitefoot a, .sitefoot .sf-note, .sitefoot .sf-copy, .sitefoot .sf-prev-label { color:#111 !important; }
+  .sitefoot .sf-prev a { border-color:#ccc; }
+  .sitefoot .sf-prev a::after { content:" — " attr(href); font-weight:400; }
+  .sf-out { display:none; }
+}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#s1">ข้ามไปเนื้อหา</a>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <span class="brandmark"><img class="brand-logo logo-light" src="logo-light.png" width="93" height="80" alt="โลโก้เข้าใจงบ ประกันสังคม" fetchpriority="high" decoding="async"><img class="brand-logo logo-dark" src="logo-dark.png" width="93" height="80" alt="" aria-hidden="true" fetchpriority="high" decoding="async"></span>
+    <div class="progress-tab" role="progressbar" aria-label="ความคืบหน้าการอ่าน" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" title="ความคืบหน้าการอ่าน"><span class="progress-track" aria-hidden="true"><span class="progress-fill"></span></span></div>
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="สลับธีมสว่างและมืด" title="สลับธีม">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4.2"></circle>
+        <path d="M12 2.3v2M12 19.7v2M2.3 12h2M19.7 12h2M5.1 5.1l1.4 1.4M17.5 17.5l1.4 1.4M18.9 5.1l-1.4 1.4M6.5 17.5l-1.4 1.4"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+<div class="copy-status" role="status" aria-live="polite" id="copyStatus"></div>
+
+<main>
+
+<!-- ============================================ HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="col">
+      <h1><span class="nowrap">“งบประกันสังคม”</span> <span class="nowrap">ที่คุณได้ยิน</span><br>คือ<span class="accent">ก้อนไหน</span>?</h1>
+      <p class="hero-sub">
+        เงินที่เกี่ยวกับประกันสังคมมี 3 ส่วน ซึ่งชื่ออาจทำให้สับสนได้
+        หน้านี้จะพาดูส่วนที่เล็กที่สุด คือ งบที่สำนักงานประกันสังคมใช้ในการทำงานและดูแลสำนักงาน
+        จากเอกสารราชการปี 2563–2567
+      </p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="hero-overview">
+      <div class="scale-fig" id="scaleFig" role="group" aria-label="เปรียบเทียบงบบริหารงานกับเงินลงทุนกองทุน"></div>
+      <div class="tiers-heading"><h2>เงิน 3 ส่วน ต่างกันอย่างไร</h2><p>เลือกแต่ละการ์ดเพื่ออ่านรายละเอียด</p></div>
+      <div class="tiers" id="tiers"></div>
+      <div class="legend-key">
+        <div><span class="src">หน้า 1</span> ตัวเลขจากเอกสารต้นฉบับในชุดข้อมูลนี้</div>
+        <div><span class="src src--ext">บริบทภายนอก</span> ตัวเลขจากแหล่งอื่น มีลิงก์กำกับทุกจุด</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ §1 คำศัพท์ -->
+<section class="chapter" id="s1">
+  <div class="wrap">
+    <div class="col">
+      <h2 class="chapter-title">รู้จัก 3 คำหลัก ก่อนเริ่มอ่านงบ</h2>
+      <p class="lede">
+        เริ่มจาก “จัดสรร” “รวมเบิกจ่ายและผูกพัน” และ “คงเหลือ” แล้วค่อยดูอัตราเบิกจ่ายประกอบ จะช่วยให้อ่านรายงานนี้เข้าใจขึ้น
+        ลองเลือกแต่ละคำเพื่อดูความหมายและตัวเลขจากปีงบประมาณ 2567
+      </p>
+    </div>
+
+    <div class="col figure">
+      <div class="vocab-bar" id="vocabBar"></div>
+      <div class="vocab-tabs" id="vocabTabs" role="tablist" aria-label="คำศัพท์งบประมาณ"></div>
+      <div class="vocab-def" id="vocabDef" role="tabpanel" aria-live="polite"></div>
+    </div>
+
+    <div class="col figure">
+      <div class="callout">
+        <strong>“ผูกพัน” หมายถึงอะไร?</strong> — ยอด “รวมเบิกจ่ายและผูกพัน” ไม่ใช่เงินที่จ่ายออกไปแล้วทั้งหมด
+        แต่รวมเงินที่ทำสัญญาไว้แล้วและยังรอจ่ายด้วย
+        ดังนั้น “อัตราเบิกจ่าย” ในหน้านี้จึงรวมเงินส่วนที่ทำสัญญาไว้แล้วด้วย
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ §2 5 ปี -->
+<section class="chapter" id="s2">
+  <div class="wrap">
+    <div class="col">
+      <h2 class="chapter-title">ปี 2567 เบิกจ่ายได้ <span class="accent">78.84%</span> — ตัวเลขนี้บอกอะไร?</h2>
+      <p class="lede">
+        แท่งสีเทาแสดงวงเงินที่ได้รับ (จัดสรร) ส่วนสีน้ำเงินคือเงินที่จ่ายแล้ว รวมกับเงินที่ทำสัญญาไว้แล้ว (เบิกจ่ายและผูกพัน)
+        ส่วนสีเทาที่ยังเห็นอยู่คือเงินคงเหลือ
+      </p>
+    </div>
+
+    <!-- กราฟอยู่นอก .col เพราะ .col กว้าง 68ch คงที่ ไม่ว่าจอจะใหญ่แค่ไหน
+         ถ้าวางกราฟไว้ข้างในจะถูกบีบจนตัวอักษรเหลือ 7 พิกเซล -->
+    <div class="figure figure--wide">
+      <p class="tap-hint"><span aria-hidden="true">👆</span> กดแท่งปีใดก็ได้เพื่อดูโครงสร้างงบปีนั้น</p>
+      <div class="year-chart" id="yearChart"></div>
+    </div>
+    <div class="col">
+      <div class="reveal-row">
+        <button class="btn" id="revealBtn" type="button" aria-pressed="false">ทำไมต้องดูวันที่ตัดยอด?</button>
+        <span class="fig-note" id="revealHint">ดูว่าแต่ละปีนับยอดเงินถึงวันไหน</span>
+      </div>
+      <div id="revealBox"></div>
+      <details class="tableview"><summary>ดูเป็นตาราง</summary>
+        <div class="tablescroll"><table id="yearTable"></table></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ §3 treemap -->
+<section class="chapter" id="s3">
+  <div class="wrap">
+    <div class="col">
+      <h2 class="chapter-title">งบก้อนนี้แบ่งยังไง</h2>
+      <p class="lede">
+        งบแบ่งเป็นหลายระดับ เริ่มจากแผนงานใหญ่ แล้วแยกเป็นหมวดค่าใช้จ่ายย่อย
+        เลือกกล่องหรือแถบเพื่อดูรายละเอียดในแต่ละระดับ กล่องที่ใหญ่หรือแถบที่ยาวหมายถึงได้รับงบมาก
+      </p>
+    </div>
+
+    <div class="figure figure--wide">
+      <div class="tm-controls">
+        <div class="yearsel" id="tmYears" role="group" aria-label="เลือกปีงบประมาณ"></div>
+        <span class="fig-note" id="tmTotal"></span>
+      </div>
+      <div class="crumbs" id="tmCrumbs" aria-label="เส้นทางที่กำลังดู"></div>
+      <div class="tm-holder" id="tmHolder"></div>
+      <p class="fig-note" id="tmLegendNote"></p>
+      <details class="tableview"><summary>ดูเป็นตาราง</summary>
+        <div class="tablescroll"><table id="tmTable"></table></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ §4 รายการ -->
+<section class="chapter" id="s4">
+  <div class="wrap">
+    <div class="col">
+      <h2 class="chapter-title">ลองทายก่อนว่าเงินไปไหน</h2>
+      <p class="lede">
+        ก่อนดูรายละเอียด ลองทายว่ารายการเหล่านี้ได้รับงบเท่าไรในหนึ่งปี
+        แล้วกดดูคำตอบจากเอกสารต้นฉบับ
+      </p>
+    </div>
+
+    <div class="col figure guess">
+      <div class="card guess-card" id="guessCard"></div>
+    </div>
+
+    <div class="col figure">
+      <div class="fig-title">5 รายการใหญ่สุด เรียงตามยอดจัดสรร</div>
+      <p class="fig-note" id="itemPreviewNote"></p>
+      <div class="barlist barlist--top5" id="itemPreview"></div>
+      <div class="reveal-row">
+        <button class="btn" id="itemOpenAll" type="button">ดูทั้งหมด →</button>
+        <span class="fig-note" id="itemPreviewCount"></span>
+      </div>
+    </div>
+
+    <dialog class="item-modal" id="itemModal" aria-labelledby="itemModalTitle">
+      <div class="item-modal-head">
+        <div>
+          <div class="fig-title">รายการงบทั้งหมด · แสดงเฉพาะรายการย่อยสุด</div>
+          <h3 id="itemModalTitle">ดูรายละเอียดแต่ละรายการ</h3>
+          <p class="fig-note" id="itemModalSub"></p>
+        </div>
+        <button class="icon-btn" id="itemClose" type="button" aria-label="ปิดหน้าต่างรายการงบ">✕</button>
+      </div>
+      <div class="item-modal-scroll">
+        <div class="item-kpis" id="itemKpis"></div>
+        <div class="fig-title">สัดส่วนตามหมวดงบรายจ่าย</div>
+        <div class="item-catbars" id="itemGroups"></div>
+        <div class="item-ctx" id="itemCtx" hidden></div>
+        <div class="filters" id="itemFilters"></div>
+        <div class="barlist" id="itemList"></div>
+        <p class="fig-note" id="itemCount"></p>
+      </div>
+    </dialog>
+  </div>
+</section>
+
+<!-- ============================================ §5 งบประจำ -->
+<section class="chapter" id="s5">
+  <div class="wrap">
+    <div class="col">
+      <h2 class="chapter-title">รายจ่ายประจำ เป็นงบที่ต้องใช้ต่อเนื่อง</h2>
+      <p class="lede" id="seriesLede"></p>
+    </div>
+
+    <div class="col figure">
+      <div class="fig-title">5 อันดับแรก เรียงตามยอดจัดสรรรวมทุกปี</div>
+      <p class="fig-note" id="seriesPreviewNote"></p>
+      <p class="tap-hint"><span aria-hidden="true">👆</span> กดที่รายการเพื่อดูกราฟแนวโน้ม 5 ปีของรายการนั้น</p>
+      <div class="sparklist" id="seriesPreview"></div>
+      <div class="reveal-row">
+        <button class="btn" id="seriesOpenAll" type="button">ดูทั้งหมด →</button>
+        <span class="fig-note" id="seriesPreviewCount"></span>
+      </div>
+      <p class="fig-note">
+        เมื่อต้องเทียบข้ามปี ระบบจะเทียบชื่อโดยไม่นับเลขลำดับและเครื่องหมายวรรคตอน
+        ถ้าชื่อคล้ายกันแต่ยังยืนยันไม่ได้ว่าเป็นรายการเดียวกัน จะมีหมายเหตุบอกไว้
+      </p>
+    </div>
+
+    <dialog class="item-modal" id="seriesModal" aria-labelledby="seriesModalTitle">
+      <div class="item-modal-head">
+        <div>
+          <div class="fig-title">รายจ่ายประจำและรายจ่ายปีเดียว · ทุกรายการที่จับคู่ข้ามปีได้</div>
+          <h3 id="seriesModalTitle">กราฟแนวโน้มทุกรายการ</h3>
+          <p class="fig-note" id="seriesModalSub"></p>
+        </div>
+        <button class="icon-btn" id="seriesClose" type="button" aria-label="ปิดหน้าต่างกราฟแนวโน้ม">✕</button>
+      </div>
+      <div class="item-modal-scroll">
+        <div class="seg" id="seriesSeg" role="group" aria-label="เลือกกลุ่มรายการ"></div>
+        <p class="tap-hint"><span aria-hidden="true">👆</span> กดที่รายการเพื่อดูกราฟแนวโน้ม 5 ปีของรายการนั้น</p>
+        <div class="sparklist" id="seriesList"></div>
+        <p class="fig-note" id="seriesModalCount"></p>
+      </div>
+    </dialog>
+  </div>
+</section>
+
+<!-- ============================================ §6 สินทรัพย์ -->
+<section class="chapter" id="s6">
+  <div class="wrap">
+    <div class="col">
+      <h2 class="chapter-title">ซื้อมา 5,419 ล้าน เหลือมูลค่าตามบัญชี 1,133 ล้าน</h2>
+      <p class="lede">
+        ทะเบียนสินทรัพย์คงเหลือ ณ 30 กันยายน 2567 มี 82,021 รายการ
+        ส่วนต่างนี้คือ <em>ค่าเสื่อมราคา</em> หรือมูลค่าที่ทยอยลดลงในบัญชีตามอายุการใช้งาน
+      </p>
+    </div>
+
+    <div class="col figure">
+      <div class="asset-grid" id="assetStats"></div>
+    </div>
+
+    <div class="col figure">
+      <div class="fig-title">ราคาที่ซื้อมา เทียบกับ มูลค่าที่เหลือตามบัญชี</div>
+      <div class="dep-list" id="assetCats"></div>
+      <details class="tableview"><summary>ดูเป็นตาราง</summary>
+        <div class="tablescroll"><table id="assetTable"></table></div>
+      </details>
+    </div>
+
+    <div class="col figure">
+      <div class="callout">
+        <strong>“เหลือ 1 บาท” ไม่ได้แปลว่าของหาย</strong> —
+        มี <span id="nearZeroN">—</span> รายการในทะเบียนที่มูลค่าตามบัญชีเหลือไม่เกิน 1 บาท
+        สินทรัพย์เหล่านี้ตัดค่าเสื่อมตามอายุทางบัญชีแล้ว แต่อาจยังใช้งานได้ตามปกติ
+        ข้อมูลต้นทางระบุว่ายังไม่ได้ตรวจยืนยันสภาพการใช้งานจริงของรายการเหล่านี้
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ §7 quiz -->
+<section class="chapter" id="s7">
+  <div class="wrap">
+    <div class="col">
+      <h2 class="chapter-title">อ่านงบยังไงไม่ให้พลาด</h2>
+      <p class="lede">
+        ลองตอบ 5 ข้อเกี่ยวกับจุดที่อาจอ่านคลาดเคลื่อนได้ แล้วดูคำอธิบายประกอบแต่ละข้อ
+      </p>
+    </div>
+    <div class="col figure">
+      <div class="quiz" id="quiz"></div>
+      <p class="qscore" id="quizScore" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================ §8 ที่มา -->
+<section class="foot" id="s8">
+  <div class="wrap">
+    <div class="col">
+      <h2 class="chapter-title">ตรวจย้อนกลับได้ทุกตัวเลข</h2>
+      <p class="lede">
+        ตัวเลขจากชุดข้อมูลนี้อ่านมาจากไฟล์ PDF ราชการด้านล่างด้วยโปรแกรม
+        โดยไม่พิมพ์ตัวเลขใหม่หรือแก้ค่าจากต้นฉบับ ส่วนข้อมูลจากแหล่งอื่นมีป้ายและลิงก์ที่มากำกับไว้
+      </p>
+      <div class="srclist" id="srcList"></div>
+
+      <div class="figure">
+        <div class="fig-title">ดาวน์โหลดข้อมูลไปใช้ต่อ</div>
+        <p class="dl-intro">
+          ทุกไฟล์ข้างล่างสร้างจากข้อมูลชุดเดียวกับที่แสดงบนหน้านี้ กดแล้วได้ไฟล์ทันที
+          CSV เปิดด้วย Excel หรือ Google Sheets ได้เลยโดยภาษาไทยไม่เพี้ยน
+          ส่วน JSON เหมาะสำหรับนำไปใช้ในโปรแกรมหรือวิเคราะห์ข้อมูลต่อ
+        </p>
+        <div class="dl-grid" id="dlGrid"></div>
+        <div class="dl-all">
+          <button class="btn" type="button" id="dlAllBtn">ดาวน์โหลดทุกตารางในไฟล์ JSON เดียว</button>
+          <span class="fig-note" id="dlAllNote"></span>
+        </div>
+      </div>
+
+      <div class="figure">
+        <div class="callout callout--brand">
+          <strong>ก่อนนำข้อมูลไปใช้ มี 4 เรื่องที่ควรรู้</strong>
+          <ol class="dl-rules">
+            <li><strong>ช่องว่างไม่ใช่ศูนย์</strong> — ต้นฉบับพิมพ์ขีดไว้ แปลว่าไม่มีข้อมูล ไม่ใช่เท่ากับ 0 อย่าเติมศูนย์อัตโนมัติ</li>
+            <li><strong>อย่าคำนวณคงเหลือใหม่</strong> — มีแถวที่ จัดสรร − เบิกจ่าย ≠ คงเหลือ ตามต้นฉบับ ไฟล์นี้ยึดค่าที่พิมพ์มา</li>
+            <li><strong>รวมยอดจากรายการย่อยสุดเท่านั้น</strong> — คือรายการที่ไม่แยกย่อยต่อแล้ว หากบวกแถวสรุปด้วยจะนับเงินซ้ำ</li>
+            <li><strong>ก่อนเทียบแต่ละปี ดูว่านับยอดถึงวันไหน</strong> — แต่ละปีตัดยอดห่างจากสิ้นปีงบไม่เท่ากัน คอลัมน์ <code>เดือนหลังสิ้นปีงบ</code> มีให้แล้วในไฟล์งบรายปี</li>
+          </ol>
+        </div>
+      </div>
+
+      <p class="disclaim" id="disclaim"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ แถบปิดท้ายเว็บ -->
+<footer class="sitefoot">
+  <div class="wrap sitefoot-in">
+
+    <div class="sf-top">
+      <div class="sf-marks">
+        <img class="sf-logo" src="logo-dark.png" width="77" height="66" alt="เข้าใจงบ ประกันสังคม" loading="lazy" decoding="async">
+        <span class="sf-rule" aria-hidden="true"></span>
+        <img class="sf-ft" src="flashthink-white.png" width="66" height="66" alt="FlashThink" loading="lazy" decoding="async">
+      </div>
+
+      <div class="sf-about">
+        <p class="sf-lead">
+          เว็บไซต์นี้เปิดงบบริหารงานของสำนักงานประกันสังคม ปีงบประมาณ 2563–2567
+          ให้คนทั่วไปอ่านเข้าใจได้ในหน้าเดียว โดยแปลงเอกสาร PDF ราชการให้เป็นข้อมูลที่เครื่องอ่านได้
+          แล้วเรียบเรียงเป็นกราฟและคำอธิบาย ทุกตัวเลขมีเลขหน้าของเอกสารต้นทางกำกับ
+          ตรวจย้อนกลับได้ และดาวน์โหลดชุดข้อมูลไปใช้ต่อได้ฟรี
+        </p>
+        <p class="sf-note">
+          ข้อมูลทั้งหมดผ่านการแปลงจากไฟล์ PDF ให้เป็น Machine-Readable ด้วยโปรแกรม
+          จึงอาจมีข้อผิดพลาดหรือรายละเอียดที่คลาดเคลื่อนจากต้นฉบับ
+          หากพบจุดที่ไม่ตรง แจ้งได้ที่ <a href="mailto:flashthinkforyou@gmail.com">flashthinkforyou@gmail.com</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="sf-tail">
+      <p class="sf-copy">เว็บไซต์โดย จิรายุส พุ่มฉัตร ทำขึ้นเพื่อเข้าร่วมกิจกรรม เพราะ AI ไม่ใช่แค่ CHATBOT</p>
+
+      <nav class="sf-prev" aria-label="ผลงานก่อนหน้า">
+        <span class="sf-prev-label">ผลงานก่อนหน้า</span>
+        <a href="https://budget.flashthink.xyz/" target="_blank" rel="noopener noreferrer">
+          ตรวจงบ
+          <svg class="sf-out" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4L10.5 13.5"></path><path d="M19 14.5V19a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19V6.5A1.5 1.5 0 0 1 5 5h4.5"></path></svg>
+          <span class="sf-sr"> (เปิดแท็บใหม่)</span>
+        </a>
+        <a href="https://progressivesso.org/" target="_blank" rel="noopener noreferrer">
+          ประกันสังคมก้าวหน้า
+          <svg class="sf-out" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4L10.5 13.5"></path><path d="M19 14.5V19a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19V6.5A1.5 1.5 0 0 1 5 5h4.5"></path></svg>
+          <span class="sf-sr"> (เปิดแท็บใหม่)</span>
+        </a>
+      </nav>
+    </div>
+
+  </div>
+</footer>
+
+<div class="tip" id="tip" role="status" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
