@@ -1395,13 +1395,23 @@ function moveTip(ev) {
   tipEl.style.top = Math.max(8, y) + "px";
 }
 function hideTip() { tipEl.classList.remove("on"); }
-/* เลื่อนหน้าเมื่อไหร่ ให้ tooltip หายทันที ไม่ค้างทับเนื้อหา */
-window.addEventListener("scroll", hideTip, { passive: true });
+/* เลื่อนเมื่อไหร่ ให้ tooltip หายทันที ไม่ค้างทับเนื้อหา
+   ใช้ capture เพื่อจับการเลื่อนในกล่องที่เลื่อนได้เอง (เช่นรายการใน modal) ด้วย
+   เพราะ scroll ของ element ไม่ bubble ขึ้นมาถึง window */
+window.addEventListener("scroll", hideTip, { passive: true, capture: true });
 window.addEventListener("blur", hideTip);
+/* tooltip แบบ hover ใช้กับเมาส์และปากกาเท่านั้น
+   บนจอสัมผัส pointerenter ยิงทันทีที่นิ้วแตะ แม้ตั้งใจจะแค่ลากเลื่อน
+   tooltip จึงเด้งขึ้นตลอดเวลาที่เลื่อนผ่านรายการ ส่วนการแตะยังทำงานตาม click ของแต่ละรายการเหมือนเดิม */
+var hoverMQ = window.matchMedia ? window.matchMedia("(hover: hover)") : null;
+/* เช็กทั้งชนิด pointer และความสามารถของอุปกรณ์ เพราะ in-app browser บางตัวรายงาน pointerType ผิด */
+function canHoverTip(e) { return e.pointerType !== "touch" && (!hoverMQ || hoverMQ.matches); }
 function bindTip(node, htmlFn) {
-  node.addEventListener("pointerenter", function (e) { showTip(htmlFn(), e); });
-  node.addEventListener("pointermove", moveTip);
+  node.addEventListener("pointerenter", function (e) { if (canHoverTip(e)) showTip(htmlFn(), e); });
+  node.addEventListener("pointermove", function (e) { if (canHoverTip(e)) moveTip(e); });
   node.addEventListener("pointerleave", hideTip);
+  /* กดแล้วมักมีแผงกางออกมาใต้แถว ปิด tooltip ไม่ให้บังสิ่งที่เพิ่งเปิด */
+  node.addEventListener("click", hideTip);
 }
 
 /** วัดความกว้างข้อความโดยประมาณ ใช้ตัดสินใจว่าจะใส่ label ในกล่องได้ไหม */
